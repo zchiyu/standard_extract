@@ -42,7 +42,7 @@ def get_token(cfg: Config) -> str:
       export MINERU_TOKEN=xxxxx (Linux/Mac)
     """
     token = os.environ.get(cfg.mineru_token_env,
-    "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJqdGkiOiIyODYwMDU4OSIsInJvbCI6IlJPTEVfUkVHSVNURVIiLCJpc3MiOiJPcGVuWExhYiIsImlhdCI6MTc2NDU5MDc5NCwiY2xpZW50SWQiOiJsa3pkeDU3bnZ5MjJqa3BxOXgydyIsInBob25lIjoiMTU3MzAxNzMzMjAiLCJvcGVuSWQiOm51bGwsInV1aWQiOiI1NmUyNWI5Zi1mMzk2LTQzMGEtODJlYy0wNGE1MWEyMzJmYmMiLCJlbWFpbCI6IiIsImV4cCI6MTc2NTgwMDM5NH0.ENFLBxGQaJ-YN9NyskYSpFaaFZw0rgJHK96eajUiAvi84DAn9T94smBLUQCaAnw_1BVSZLTAxeThTeqf-_p1ZA").strip()
+    "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJqdGkiOiIyODYwMDU4OSIsInJvbCI6IlJPTEVfUkVHSVNURVIiLCJpc3MiOiJPcGVuWExhYiIsImlhdCI6MTc2NjA2MTI1MSwiY2xpZW50SWQiOiJsa3pkeDU3bnZ5MjJqa3BxOXgydyIsInBob25lIjoiMTU3MzAxNzMzMjAiLCJvcGVuSWQiOm51bGwsInV1aWQiOiIzNDk5MDhkYS04MDEwLTQzMTctODFjZC03MzU3YzdiNjU5MjUiLCJlbWFpbCI6IiIsImV4cCI6MTc2NzI3MDg1MX0.uw-3VmLdfUycVSGTw8OftYh5oLC4wo46T1mysBwW5C-O2O6UxKfmocri1jQavKi-zTRZ6As3ZA1Z5mZtTTEMZg").strip()
     if not token:
         raise RuntimeError(
             f"未设置 MinerU Token：请配置环境变量 {cfg.mineru_token_env}"
